@@ -6,11 +6,13 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.post('/token/:tokenid', function(req, res, next){
+router.post('/token', function(req, res, next){
 
-  const tokenId = req.params.tokenid;
+  const tokenId = req.body.token;
+  const facebookId = req.body.id;
 
   console.log(tokenId);
+  console.log(facebookId);
 
 
 })
