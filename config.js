@@ -11,8 +11,8 @@ var config = {
 	},
 	host: 'http://52.78.72.166:3000',
 	facebook: {
-		appID: '664948890341128',
-		appSecret: '7723f51fee907c706d2834662dd81812',
+		appID: '1137559296307339',
+		appSecret: '45c2930725a4dd7f592e3e3f47c60c15',
 	},
 	crypto: {
 		workFactor: 5000,
