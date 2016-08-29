@@ -10,6 +10,10 @@ var session = require('express-session');
 
 
 var passport = require('./passport');
+
+
+var routes = require('./routes/index');
+
 var app = express();
 
 // view engine setup
@@ -35,6 +39,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(util.authenticated);
+app.use('/', routes);
 app.get(config.routes.chat, [util.requireAuthentication], function chat(req, res){
 	res.render('chat', {title: 'Chat'});
 });
