@@ -9,7 +9,7 @@ var config = {
 		facebookAuth: '/auth/facebook',
 		facebookAuthCallback: '/auth/facebook/callback'
 	},
-	host: 'http://localhost:3000',
+	host: 'http://52.78.72.166:3000',
 	facebook: {
 		appID: '664948890341128',
 		appSecret: '7723f51fee907c706d2834662dd81812',
